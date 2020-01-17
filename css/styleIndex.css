@@ -3,7 +3,6 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
 * {
   font-family: sans-serif;
 }
@@ -15,7 +14,6 @@ html {
       fixed;
     background-size: cover;
   }
-
   body {
     height: 100%;
   }
@@ -26,14 +24,18 @@ html {
       fixed;
     background-size: cover;
   }
-
   body {
     height: 100%;
   }
 }
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  html {
+    display: block;
+    margin: auto;
+  }
+}
 
 /*-------------------------TIPOGRAFÍA-------------------------*/
-
 @font-face {
   font-family: "FuturaStd-Book";
   font-style: normal;
@@ -62,13 +64,11 @@ html {
   src: local("FuturaStd-CondBold"),
     url("../fonts/FuturaStd-CondensedBold.woff") format("woff");
 }
-
 @font-face {
   font-family: "FuturaCondensed";
   font-weight: 400;
   src: url(../fonts/FuturaStd-Condensed.otf) format("OpenType");
 }
-
 @font-face {
   font-family: "FuturaCondensedLight";
   font-weight: 300;
@@ -76,7 +76,6 @@ html {
 }
 
 /*-------------------------VARIOS-------------------------*/
-
 @media only screen and (max-width: 385px) {
   .list-container {
     margin: 0 30px;
@@ -96,25 +95,21 @@ html {
     width: auto !important;
   }
 }
-
 .container {
   width: auto !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
-
 h1 {
   font-weight: 500;
   margin-left: 30px !important;
   font-size: 20px !important;
   font-family: "FuturaStd-Bold", sans-serif !important;
 }
-
 .list {
   padding: 0;
   margin-top: 8px;
 }
-
 .item {
   padding: 6px 0;
   list-style: none;
@@ -123,7 +118,6 @@ h1 {
   font-family: "FuturaStd-Book", "FuturaSt-Book", sans-serif;
   font-size: 14px;
 }
-
 .arrow {
   padding: 8px 0;
   list-style: none;
@@ -137,7 +131,6 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
-
 .media {
   margin: 0;
   padding: 10px 30px;
@@ -147,7 +140,6 @@ h1 {
   font-weight: 600;
   background-color: #fff;
 }
-
 .categories {
   display: flex;
 }
@@ -163,7 +155,6 @@ h1 {
 }
 
 /*-------------------------MENUtoggle-------------------------*/
-
 #menuToggle {
   display: block;
   position: absolute;
@@ -175,7 +166,6 @@ h1 {
   -webkit-user-select: none;
   user-select: none;
 }
-
 #menuToggle input {
   display: block;
   width: 40px;
@@ -188,7 +178,6 @@ h1 {
   z-index: 2;
   -webkit-touch-callout: none;
 }
-
 #menuToggle span {
   display: block;
   width: 30px;
@@ -202,31 +191,25 @@ h1 {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
-
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
-
 #menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #fff;
 }
-
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-
 #menuToggle input:checked ~ span:nth-last-child(2) {
   opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
 }
-
 #menu {
   position: fixed;
   width: 500px;
@@ -242,16 +225,13 @@ h1 {
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
-
 #menulist {
   border-bottom: 1px dotted rgb(255, 255, 255);
 }
-
 #menulist a {
   color: white !important;
   text-decoration: none;
 }
-
 #menu li {
   padding: 5px 0;
   color: #fff;
@@ -259,14 +239,12 @@ h1 {
   font-size: 36px;
   font-weight: 400;
 }
-
 #menuToggle input:checked ~ ul {
   transform: scale(1, 1);
   opacity: 1;
 }
 
 /*-------------------------FORMATOS-------------------------*/
-
 .title-rm {
   font-weight: 800;
   border-bottom: 2px solid #1e345d;
@@ -299,7 +277,6 @@ h1 {
   font-family: "FuturaStd-Bold", sans-serif;
   outline: none !important;
 }
-
 @media (max-width: 567px) {
   #FPC {
     display: none;
@@ -312,7 +289,6 @@ h1 {
 }
 
 /*-------------------------MENU-------------------------*/
-
 .navbar,
 .navbar-inverse {
   border-radius: 0;
@@ -351,7 +327,6 @@ h1 {
 .navbar-inverse .navbar-form {
   background-color: white;
 }
-
 .navbar-inverse .navbar-toggle {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
@@ -369,7 +344,6 @@ h1 {
   float: left;
   margin-top: -55px;
 }
-
 @media screen and (min-width: 0px) and (max-width: 1300px) {
   .specsmenu {
     display: none !important;
@@ -377,7 +351,6 @@ h1 {
 }
 
 /*-------------------------TITULOS-------------------------*/
-
 #formatos {
   display: inline-block;
   vertical-align: top;
@@ -432,7 +405,6 @@ h1 {
 }
 
 /*-------------------------LOGOS-------------------------*/
-
 .logoBLANCO {
   float: left;
   width: 80px;
@@ -441,7 +413,6 @@ h1 {
   margin-right: 30px;
   display: inline;
 }
-
 @media (max-width: 767px) {
   .logoBLANCO {
     display: flex;
@@ -456,7 +427,6 @@ h1 {
     padding-left: 35px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1084px) {
   .logoBLANCO {
     margin-top: 4px !important;
@@ -466,7 +436,6 @@ h1 {
   width: auto;
   margin-left: 10px;
 }
-
 @media (min-width: 800px) {
   .logoMOBILE {
     display: flex;
@@ -474,7 +443,6 @@ h1 {
 }
 
 /*-------------------------BEFOREFOOTER-------------------------*/
-
 .videoPC {
   position: fixed;
   right: 0;
@@ -503,7 +471,6 @@ h1 {
 }
 
 /*-------------------------FOOTER-------------------------*/
-
 footer {
   left: 0;
   bottom: 0;
