@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/styleIndex.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#000000"/>
+    <title>Logan Media</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
@@ -16,12 +16,44 @@
       type="image/png"
       href="https://loganmedia.mobi/favicon.ico"
     />
-    <link rel="manifest" href="/test/app/manifest.json" />
-    <title>Logan Media</title>
     <link
       rel="apple-touch-icon"
-      href="https://raw.githubusercontent.com/eugeniosaintemarie/loganapppublic/master/logo.png"
+      sizes="180x180"
+      href="images/icons/logo180.png"
     />
+    <link rel="manifest" href="/test/app/manifest.json" />
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/test/app/sw.js");
+        });
+      }
+    </script>
+    <style>
+      @media (max-width: 1200px) {
+        html {
+          background: url(/test/app/images/creativeservicesPC.gif) no-repeat center
+            center fixed;
+          background-size: cover;
+        }
+        body {
+          height: 100%;
+        }
+      }
+      @media (min-width: 402px) {
+        html {
+          background: url(/test/app/images/creativeservicesMO.gif) no-repeat center
+            center fixed;
+          background-size: cover;
+        }
+        body {
+          height: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -65,9 +97,6 @@
         </nav>
       </header>
     </div>
-    <button onclick="install()">
-      Instalar
-    </button>
     <!-------------------------VIDEOS------------------------->
     <!--
     <div id="beforeFooter">
@@ -78,52 +107,6 @@
           <source src="images/creativeservicesMO.mp4" type="video/mp4">
         </video>
     </div>
-  </div>
--->
+    -->
   </body>
-  <!-------------------------FOOTER------------------------->
-  <!--
-<footer>
-  <strong><p style="margin-bottom: 0px !important;"><script type="text/javascript">document.write(new Date().getFullYear());</script> | Logan Media </p></strong>
-</footer>
--->
-  <script>
-    if ("serviceWorker" in navigator) {
-      if (navigator.serviceWorker.controller) {
-        console.log(
-          "[PWA Builder] active service worker found, no need to register"
-        );
-      } else {
-        navigator.serviceWorker
-          .register("pwabuilder-sw.js", {
-            scope: "./"
-          })
-          .then(function(reg) {
-            console.log(
-              "[PWA Builder] Service worker has been registered for scope: " +
-                reg.scope
-            );
-          });
-      }
-    }
-    let deferredPrompt = null;
-    window.addEventListener("beforeinstallprompt", e => {
-      e.preventDefault();
-      deferredPrompt = e;
-    });
-    async function install() {
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        console.log(deferredPrompt);
-        deferredPrompt.userChoice.then(function(choiceResult) {
-          if (choiceResult.outcome === "accepted") {
-            console.log("Your PWA has been installed");
-          } else {
-            console.log("User chose to not install your PWA");
-          }
-          deferredPrompt = null;
-        });
-      }
-    }
-  </script>
 </html>

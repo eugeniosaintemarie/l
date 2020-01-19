@@ -47,87 +47,103 @@ html {
   src: url(../fonts/FuturaStd-CondensedLight.otf) format("OpenType");
 }
 
-/*-------------------------VARIOS-------------------------*/
-@media only screen and (max-width: 385px) {
-  .list-container {
-    margin: 0 30px;
-  }
+/*-------------------------MENU-------------------------*/
+.navbar,
+.navbar-inverse {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  min-height: 80px;
+  background-color: white !important;
+  border-color: grey !important;
 }
-@media only screen and (min-width: 385px) {
-  .list-container {
-    width: 25%;
-    margin: 0 30px;
-  }
-}
-@media only screen and (max-width: 570px) {
-  .categories {
-    flex-direction: column !important;
-  }
-  .list-container {
-    width: auto !important;
-  }
-}
-.container {
-  width: auto !important;
-  padding-right: 0px !important;
-  padding-left: 0px !important;
-}
-h1 {
-  font-weight: 500;
-  margin-left: 30px !important;
-  font-size: 20px !important;
-  font-family: "FuturaStd-Bold", sans-serif !important;
-}
-.list {
-  padding: 0;
-  margin-top: 8px;
-}
-.list-func {
-  padding: 0;
-  margin-top: 0px;
-  margin-bottom: 0px !important;
-}
-.item {
-  padding: 6px 0;
-  list-style: none;
+.nav li {
+  display: inline;
   color: black;
-  font-style: none;
-  font-family: "FuturaStd-Book", "FuturaSt-Book", sans-serif;
-  font-size: 14px;
 }
-.arrow {
-  padding: 8px 0;
-  list-style: none;
-  color: black;
-  font-style: none;
-  font-family: "Futura-Book", sans-serif;
-}
-.link {
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.media {
-  margin: 0;
-  padding: 10px 30px;
-  color: #fff;
+.navbar-inverse .navbar-nav > li > a {
+  color: black !important;
   font-family: "FuturaStd-Bold", sans-serif;
   font-size: 16px;
-  font-weight: 600;
-  background-color: #fff;
+  font-weight: 100;
+  padding: 20px 20px 20px 20px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
-.categories {
-  display: flex;
+.navbar-inverse .navbar-nav li a:hover {
+  color: black;
+  transition: 0.7s all linear;
+  height: 100%;
 }
-@media only screen and (max-width: 385px) {
-  .categories {
-    flex-direction: column;
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: black !important;
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: white !important;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  background-color: white;
+}
+.navbar-inverse .navbar-toggle {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  margin-right: 30px !important;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #fff !important;
+}
+.menuItem {
+  color: black !important;
+  margin-left: 25px !important;
+}
+#left-container {
+  display: inline-block;
+  float: left;
+  margin-top: -55px;
+}
+@media screen and (min-width: 0px) and (max-width: 1300px) {
+  .specsmenu {
+    display: none !important;
   }
 }
-@media only screen and (min-width: 385px) {
-  .categories {
-    flex-direction: row;
+
+/*-------------------------LOGOS-------------------------*/
+.logoBLANCO {
+  float: left;
+  width: 80px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  display: inline;
+}
+@media (max-width: 767px) {
+  .logoBLANCO {
+    display: flex;
+  }
+  .navbar-inverse .navbar-collapse,
+  .navbar-inverse .navbar-form {
+    background-color: black;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+    font-size: 14px;
+    padding-left: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1084px) {
+  .logoBLANCO {
+    margin-top: 4px !important;
+  }
+}
+.logoMOBILE {
+  width: auto;
+  margin-left: 10px;
+}
+@media (min-width: 800px) {
+  .logoMOBILE {
+    display: flex;
   }
 }
 
@@ -220,120 +236,84 @@ h1 {
   transform: scale(1, 1);
   opacity: 1;
 }
-@media screen and (min-width: 0px) and (max-width: 1300px) {
-  .specsmenu {
-    display: none !important;
-  }
-}
 
-/*-------------------------FORMATOS-------------------------*/
-.title-rm {
-  font-weight: 800;
-  border-bottom: 2px solid #1e345d;
-  padding: 10px 0;
-  font-size: 14px;
-  font-family: "FuturaStd-Bold", sans-serif !important;
-  outline: none !important;
-}
-.title-display {
-  font-weight: 800;
-  border-bottom: 2px solid #000;
-  padding: 10px 0;
-  font-size: 14px;
-  font-family: "FuturaStd-Bold", sans-serif;
-  outline: none !important;
-}
-.title-video {
-  font-weight: 800;
-  border-bottom: 2px solid #c8342b;
-  padding: 10px 0;
-  font-size: 14px;
-  font-family: "FuturaStd-Bold", sans-serif;
-  outline: none !important;
-}
-.title-nm {
-  font-weight: 800;
-  border-bottom: 2px solid #fdbc18;
-  padding: 10px 0;
-  font-size: 14px;
-  font-family: "FuturaStd-Bold", sans-serif;
-  outline: none !important;
-}
-.title-funcionalidades {
-  font-weight: 800;
-  border-bottom: 2px solid #1e345d;
-  padding: 10px 0;
-  font-size: 14px;
-  font-family: "FuturaStd-Bold", sans-serif !important;
-  outline: none !important;
-  margin: 0 30px;
-}
-@media (max-width: 567px) {
-  #FPC {
-    display: none;
+/*-------------------------VARIOS-------------------------*/
+@media only screen and (max-width: 385px) {
+  .list-container {
+    margin: 0 30px;
   }
 }
-@media (min-width: 568px) {
-  #FMO {
-    display: none;
+@media only screen and (min-width: 385px) {
+  .list-container {
+    width: 25%;
+    margin: 0 30px;
   }
 }
-
-/*-------------------------MENU-------------------------*/
-.navbar,
-.navbar-inverse {
-  border-radius: 0;
-  border: none;
-  margin-bottom: 0;
-  min-height: 80px;
-  background-color: white !important;
-  border-color: grey !important;
+@media only screen and (max-width: 570px) {
+  .categories {
+    flex-direction: column !important;
+  }
+  .list-container {
+    width: auto !important;
+  }
 }
-.nav li {
-  display: inline;
+.container {
+  width: auto !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+h1 {
+  font-weight: 500;
+  margin-left: 30px !important;
+  font-size: 20px !important;
+  font-family: "FuturaStd-Bold", sans-serif !important;
+}
+.list {
+  padding: 0;
+  margin-top: 8px;
+}
+.item {
+  padding: 6px 0;
+  list-style: none;
   color: black;
+  font-style: none;
+  font-family: "FuturaStd-Book", "FuturaSt-Book", sans-serif;
+  font-size: 14px;
 }
-.navbar-inverse .navbar-nav > li > a {
-  color: black !important;
+.arrow {
+  padding: 8px 0;
+  list-style: none;
+  color: black;
+  font-style: none;
+  font-family: "Futura-Book", sans-serif;
+}
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.media {
+  margin: 0;
+  padding: 10px 30px;
+  color: #fff;
   font-family: "FuturaStd-Bold", sans-serif;
   font-size: 16px;
-  font-weight: 100;
-  padding: 20px 20px 20px 20px;
-  margin-left: 8px;
-  margin-right: 8px;
+  font-weight: 600;
+  background-color: #fff;
 }
-.navbar-inverse .navbar-nav li a:hover {
-  color: black;
-  transition: 0.7s all linear;
-  height: 100%;
+.categories {
+  display: flex;
 }
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: black !important;
+@media only screen and (max-width: 385px) {
+  .categories {
+    flex-direction: column;
+  }
 }
-.navbar-inverse .navbar-toggle:focus,
-.navbar-inverse .navbar-toggle:hover {
-  background-color: white !important;
-}
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-  background-color: white;
-}
-.navbar-inverse .navbar-toggle {
-  margin-top: 15px !important;
-  margin-bottom: 15px !important;
-  margin-right: 30px !important;
-}
-.navbar-inverse .navbar-toggle {
-  border-color: #fff !important;
-}
-.menuItem {
-  color: black !important;
-  margin-left: 25px !important;
-}
-#left-container {
-  display: inline-block;
-  float: left;
-  margin-top: -55px;
+@media only screen and (min-width: 385px) {
+  .categories {
+    flex-direction: row;
+  }
 }
 
 /*-------------------------TITULOS-------------------------*/
@@ -390,80 +370,46 @@ h1 {
   }
 }
 
-/*-------------------------LOGOS-------------------------*/
-.logoBLANCO {
-  float: left;
-  width: 80px;
-  margin-top: 4px;
-  margin-bottom: 20px;
-  margin-right: 30px;
-  display: inline;
+/*-------------------------FORMATOS-------------------------*/
+.title-rm {
+  font-weight: 800;
+  border-bottom: 2px solid #1e345d;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "FuturaStd-Bold", sans-serif !important;
+  outline: none !important;
 }
-@media (max-width: 767px) {
-  .logoBLANCO {
-    display: flex;
-  }
-  .navbar-inverse .navbar-collapse,
-  .navbar-inverse .navbar-form {
-    background-color: black;
-  }
-  .navbar-inverse .navbar-nav > li > a {
-    color: white !important;
-    font-size: 14px;
-    padding-left: 35px;
-  }
+.title-display {
+  font-weight: 800;
+  border-bottom: 2px solid #000;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "FuturaStd-Bold", sans-serif;
+  outline: none !important;
 }
-@media (min-width: 768px) and (max-width: 1084px) {
-  .logoBLANCO {
-    margin-top: 4px !important;
-  }
+.title-video {
+  font-weight: 800;
+  border-bottom: 2px solid #c8342b;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "FuturaStd-Bold", sans-serif;
+  outline: none !important;
 }
-.logoMOBILE {
-  width: auto;
-  margin-left: 10px;
+.title-nm {
+  font-weight: 800;
+  border-bottom: 2px solid #fdbc18;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "FuturaStd-Bold", sans-serif;
+  outline: none !important;
 }
-@media (min-width: 800px) {
-  .logoMOBILE {
-    display: flex;
-  }
-}
-
-/*-------------------------BEFOREFOOTER-------------------------*/
-.videoPC {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-@media (max-width: 1200px) {
-  .videoPC {
-    width: 400px;
-  }
-}
-@media (max-width: 376px) {
-  .videoPC {
-    display: none;
-  }
-  .videoMO {
-    height: 100vh;
-    min-height: 100%;
-  }
-}
-@media (min-width: 375px) {
-  .videoMO {
+@media (max-width: 567px) {
+  #FPC {
     display: none;
   }
 }
-
-/*-------------------------FOOTER-------------------------*/
-footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
-  background-color: white;
-  text-align: center;
-  padding-top: 3px;
-  position: absolute;
+@media (min-width: 568px) {
+  #FMO {
+    display: none;
+  }
 }
