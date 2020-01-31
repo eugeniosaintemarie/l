@@ -2,9 +2,9 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#000000"/>
+    <meta name="theme-color" content="#000000" />
     <title>Logan Media</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -19,12 +19,16 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="images/icons/logo180.png"
+      href="images/icons/icon-180x180.png"
     />
     <link rel="manifest" href="/test/app/manifest.json" />
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"
+    ></script>
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
@@ -33,21 +37,20 @@
       }
     </script>
     <style>
+      html {
+        background: url(/test/app/images/creativeservices.gif) no-repeat
+          center center fixed;
+        background-size: cover;
+      }
+      body {
+        height: 100%;
+      }
       @media (max-width: 1200px) {
         html {
-          background: url(/test/app/images/creativeservicesPC.gif) no-repeat center
-            center fixed;
-          background-size: cover;
-        }
-        body {
-          height: 100%;
-        }
-      }
-      @media (min-width: 402px) {
-        html {
-          background: url(/test/app/images/creativeservicesMO.gif) no-repeat center
-            center fixed;
-          background-size: cover;
+          background: url(/test/app/images/creativeservices.gif);
+          background-size:     cover;
+          background-repeat:   no-repeat;
+          background-position: 0px 75px;
         }
         body {
           height: 100%;
@@ -97,16 +100,5 @@
         </nav>
       </header>
     </div>
-    <!-------------------------VIDEOS------------------------->
-    <!--
-    <div id="beforeFooter">
-        <video  class="videoPC" width="1200" controls autoplay loop muted>
-          <source src="images/creativeservicesPC.mp4" type="video/mp4">
-        </video>
-        <video  class="videoMO" controls autoplay loop>
-          <source src="images/creativeservicesMO.mp4" type="video/mp4">
-        </video>
-    </div>
-    -->
   </body>
 </html>

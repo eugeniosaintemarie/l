@@ -1,0 +1,287 @@
+.container{
+	    position: relative;
+    z-index: 999;
+}
+
+{
+	width: 100%;
+/*	margin-top: 2em;*/
+	/*border-bottom: 1px solid #000;*/
+}
+
+/* general ul style */
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* first level ul style */
+ul,
+.cbp-hrsub-inner {
+/*
+	width: 90%;
+	max-width: 70em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+*/
+}
+
+ul > li {
+	display: inline-block;
+}
+
+ul > li.logo {
+	float: right;
+}
+
+ul > li.logo a {
+    padding: .75em 2em;
+}
+ul > li.logo a img{
+    max-width: 59px;
+}
+
+ul > li > a {
+	font-weight: 700;
+	padding: 1em 2em;
+	color: #000;
+	display: inline-block;
+
+}
+
+ul > li > a:hover {
+	color: #000;
+}
+
+ul > li.cbp-hropen > a,
+ul > li.cbp-hropen > a:hover {
+	color: #000;
+	background: #fff;
+	text-decoration: underline;
+/*	 font-family: 'Conv_FuturaStd-Bold', sans-serif;*/
+	
+}
+
+/* sub-menu */
+.cbp-hrsub {
+	display: none;
+	position: absolute;
+	background: #fff; 
+	width: 100%;
+	left: 0;
+/*	border-top:1px solid #000;
+*/	
+}
+
+.cbp-hropen .cbp-hrsub {
+	display: block;
+	padding: 1.5em 1em 2em;
+    border-top: 1px dashed #d8d7d7;	
+}
+
+.cbp-hrsub-inner > div {
+	width: 25%;
+	float: left;
+	padding: 0 1em 0;
+	border-right: 1px dashed #d8d7d7;
+}
+.cbp-hrsub-inner > div:last-child {
+	border-right: none;
+}
+
+.cbp-hrsub-inner > div {
+	width: 25%;
+	float: left;
+	padding: 0 1em 0;
+}
+
+/* Styles added by Susan */
+.cbp-hropen .cbp-content {
+	padding-top:10px;
+	background-color:white;
+}
+
+.cbp-hrsub-inner.cbp-content > div {
+	width:100%;
+}
+/* End styles added by Susan */
+
+.cbp-hrsub-inner:before,
+.cbp-hrsub-inner:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-hrsub-inner:after {
+	clear: both;
+}
+
+.cbp-hrsub-inner > div li {
+    margin: 0 0 10px 0;
+    overflow: hidden;
+        width: 100%;
+}
+
+.cbp-hrsub-inner > div p {
+    color: #000;
+    margin: 0 0 5px 0;
+    float: left;
+    overflow: hidden;
+}
+.cbp-hrsub-inner > div .language {
+    float: right;
+}
+.cbp-hrsub-inner > div .language a {
+	float: left;
+    line-height: normal;
+    margin: 0 10px 0 0;
+	color: #000	
+}
+.cbp-hrsub-inner > div a:last-child {
+	margin: 0 0 0 0;
+}
+
+
+.cbp-hrsub-inner > div a:hover {
+	background: #000;
+	color: #fff
+}
+
+
+.cbp-hrsub h4 {
+	color: #000;
+	margin: 0 0 10px 0;
+	font-size: 1em;
+	font-weight: 300;
+	font-family: 'Conv_FuturaStd-Bold', sans-serif;
+}
+
+/* Examples for media queries */
+
+@media screen and (max-width: 52.75em) { 
+
+	{
+		font-size: 80%;
+	}
+
+}
+
+@media screen and (max-width: 43em) { 
+
+	{
+		font-size: 120%;
+		border: none;
+	}
+
+	> ul,
+	.cbp-hrsub-inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	.cbp-hrsub-inner {
+		padding: 0 2em;
+		font-size: 75%;
+	}
+
+	> ul > li {
+		display: block;
+		border-bottom: 1px dashed #d8d7d7;	
+	}
+	> ul > li:last-child {
+	border-bottom: none;
+    float: none;
+    padding: 0 0 0 22px;
+	}
+
+	> ul > li > a { 
+		display: block;
+		padding: 1em 3em;
+	}
+
+	.cbp-hrsub { 
+		position: relative;
+	}
+
+	.cbp-hrsub h4 {
+		padding-top: 0.6em;
+	}
+
+}
+
+@media screen and (max-width: 36em) { 
+	.cbp-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		/*padding: 0 2em;*/
+	}
+}
+
+
+
+
+
+body {
+    margin: 0;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+h1.title {
+    width: 100%;
+    position: absolute;
+    top: 51%;
+    transform: translateY(-50%);
+    font-family: 'Conv_FuturaStd-Bold',s sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.1);
+    font-size: 10em;
+    line-height: 1em;
+    margin: 0;
+}
+
+h1.quote{
+	float: left;
+    width: auto;
+    margin: 1.2% 0 0 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.new{
+	background: #c8342b;
+	color: #fff;
+	font-size: .5em;
+    padding: .3em .7em;
+    margin: 0px 0 0px 5px;
+    position: relative;
+    bottom: 3px;
+}
+.coming{
+	background: #1c5631;
+	color: #fff;
+	font-size: .5em;
+    padding: .3em .7em;
+    margin: 0px 0 0px 5px;
+    position: relative;
+    bottom: 3px;    
+}
+.updated{
+	background: #fdbc18;
+	color: #fff;
+	font-size: .5em;
+    padding: .3em .7em;
+    margin: 0px 0 0px 5px;
+    position: relative;
+    bottom: 3px;    
+}
