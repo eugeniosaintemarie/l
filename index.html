@@ -1,104 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#000000" />
     <title>Logan Media</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="https://loganmedia.mobi/favicon.ico"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/icons/icon-180x180.png"
-    />
-    <link rel="manifest" href="/test/app/manifest.json" />
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="shortcut icon" type="image/png" href="https://loganmedia.mobi/favicon.ico" />
+    <link rel="creativeservicesle-touch-icon" sizes="180x180" href="images/icons/icon-180x180.png" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-yes" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Logan Media" />
+    <link href="images/creativeservicesle_splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="creativeservicesle-touch-startup-image" />
+    <link href="images/creativeservicesle_splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="creativeservicesle-touch-startup-image" />
+    <link rel="manifest" href="/creativeservices/manifest.json" />
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("/test/app/sw.js");
-        });
-      }
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("/creativeservices/sw.js");
+            });
+        }
     </script>
     <style>
-      html {
-        background: url(/test/app/images/creativeservices.gif) no-repeat
-          center center fixed;
-        background-size: cover;
-      }
-      body {
-        height: 100%;
-      }
-      @media (max-width: 1200px) {
         html {
-          background: url(/test/app/images/creativeservices.gif);
-          background-size:     cover;
-          background-repeat:   no-repeat;
-          background-position: 0px 75px;
+            background: url(/creativeservices/images/creativeservices.gif) no-repeat center center fixed;
+            background-size: cover;
         }
+        
         body {
-          height: 100%;
+            height: 100%;
         }
-      }
+        
+        @media (min-width: 1200px) {
+            html {
+                background: url(/creativeservices/images/creativeservices.gif);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0px 50px;
+            }
+            body {
+                height: 100%;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            html {
+                background: url(/creativeservices/images/creativeservicesMO.gif);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            body {
+                height: 100%;
+            }
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <header class="media">
-        <div class="header-formatos">
-          <a href="http://loganmedia.mobi/test/app"
-            ><img class="logoBLANCO" src="images/logoN.png"
-          /></a>
+        <header class="media">
+            <div class="header-formatos">
+                <a href="http://loganmedia.mobi/creativeservices"><img class="logoBLANCO" src="images/logoN.png" /></a>
+            </div>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" style="" /><span></span> <span></span> <span></span>
+                    <ul id="menu">
+                        <div class="menulist">
+                            <a style="color: white !important;" href="../creativeservices/formatos.html">
+                                <li>FORMATOS</li>
+                            </a>
+                            <a class="itemmenufuncionalidades" style="color: white !important;" href="../creativeservices/funcionalidades.html">
+                                <li>FUNCIONALIDADES</li>
+                            </a>
+                            <a class="itemmenuindustria" style="color: white !important;" href="../creativeservices/industria.html">
+                                <li>ADS POR INDUSTRIA</li>
+                            </a>
+                            <a class="itemmenumes" style="color: white !important;" href="../creativeservices/mes.html">
+                                <li>ADS POR MES</li>
+                            </a>
+                            <a style="color: white !important;" href="../creativeservices/specs.html">
+                                <li>SPECS</li>
+                            </a>
+                            <a style="color: white !important;" href="../creativeservices/oficinas.html">
+                                <li>OFICINAS</li>
+                            </a>
+                            <hr align="left" style="width: 60%; border-top: 1px dotted white;">
+                            <div class="row">
+                                <div class="column">
+                                    <li class="redesmenu" style="margin-left: 15px; margin-right: 15px; font-size: 25px;">
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.facebook.com/loganmediahq/" target="_blank"> <i class="fab fa-facebook"></i> </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.instagram.com/loganmediahq/" target="_blank"> <i class="fab fa-instagram"></i> </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.linkedin.com/company/logan-media" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://twitter.com/loganmediahq?lang=en" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.youtube.com/user/loganmediahq/videos?view_as=subscriber" target="_blank"> <i class="fab fa-youtube"></i> </a>
+                                    </li>
+                                </div>
+                            </div>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
         </div>
-        <nav role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-              <div class="menulist">
-                <a style="color: white !important;" href="../app/formatos.html"
-                  ><li>FORMATOS</li></a
-                >
-                <a
-                  style="color: white !important;"
-                  href="../app/funcionalidades.html"
-                  ><li>FUNCIONALIDADES</li></a
-                >
-                <a style="color: white !important;" href="../app/industria.html"
-                  ><li>ADS POR INDUSTRIA</li></a
-                >
-                <a style="color: white !important;" href="../app/mes.html"
-                  ><li>ADS POR MES</li></a
-                >
-                <a
-                  class="specsmenu"
-                  style="color: white !important;"
-                  href="../app/specs.html"
-                  ><li>SPECS</li></a
-                >
-              </div>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
-  </body>
+</body>
+
 </html>

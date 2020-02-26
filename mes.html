@@ -1,125 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Logan Media</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="https://loganmedia.mobi/favicon.ico"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Logan Media</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="shortcut icon" type="image/png" href="https://loganmedia.mobi/favicon.ico" />
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+
 <body>
-  <div class='container'>
-    <header class='media'>
-        <div class='header-formatos'>
-          <a href="http://loganmedia.mobi/test/app"><img class="logoBLANCO" src="images/logoN.png"></a>
+    <div class='container'>
+        <header class='media'>
+            <div class='header-formatos'>
+                <a href="http://loganmedia.mobi/creativeservices"><img class="logoBLANCO" src="images/logoN.png"></a>
+            </div>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <div class="menulist">
+                            <a style="color: white !important;" href="../creativeservices/index.html">
+                                <li>INICIO</li>
+                            </a>
+                            <a style="color: white !important;" href="../creativeservices/formatos.html">
+                                <li>FORMATOS</li>
+                            </a>
+                            <a class="itemmenufuncionalidades" style="color: white !important;" href="../creativeservices/funcionalidades.html">
+                                <li>FUNCIONALIDADES</li>
+                            </a>
+                            <a class="itemmenuindustria" style="color: white !important;" href="../creativeservices/industria.html">
+                                <li>ADS POR INDUSTRIA</li>
+                            </a>
+                            <a class="itemmenumes" style="color: white !important;" href="../creativeservices/mes.html">
+                                <li>ADS POR MES</li>
+                            </a>
+                            <a style="color: white !important;" href="../creativeservices/specs.html">
+                                <li>SPECS</li>
+                            </a>
+                            <a style="color: white !important;" href="../creativeservices/oficinas.html">
+                                <li>OFICINAS</li>
+                            </a>
+                            <hr align="left" style="width: 60%; border-top: 1px dotted white;">
+                            <div class="row">
+                                <div class="column">
+                                    <li class="redesmenu" style="margin-left: 15px; margin-right: 15px; font-size: 25px;">
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.facebook.com/loganmediahq/" target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.instagram.com/loganmediahq/" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.linkedin.com/company/logan-media" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://twitter.com/loganmediahq?lang=en" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.youtube.com/user/loganmediahq/videos?view_as=subscriber" target="_blank">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
         </div>
-        <nav role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>    
-            <ul id="menu">
-              <div class="menulist">
-                <a style="color: white !important;" href="../app/formatos.html"
-                  ><li>FORMATOS</li></a
-                >
-                <a
-                  style="color: white !important;"
-                  href="../app/funcionalidades.html"
-                  ><li>FUNCIONALIDADES</li></a
-                >
-                <a style="color: white !important;" href="../app/industria.html"
-                  ><li>ADS POR INDUSTRIA</li></a
-                >
-                <a style="color: white !important;" href="../app/mes.html"
-                  ><li>ADS POR MES</li></a
-                >
-                <a
-                  class="specsmenu"
-                  style="color: white !important;"
-                  href="../app/specs.html"
-                  ><li>SPECS</li></a
-                >
-              </div>
-            </ul>
-          </div>
-        </nav>
-    </header>
-  </div>
-    <section class="categories">
-        <div class='list-container'>
-            <details open>
-              <summary class='title-rm'>MEJORES ADS POR MES - 2020</summary>
-            <ul class='list'>
-              <a href="#" class="link">
-                <li class='item'>Enero</li>
-                <li class='arrow'><img src="images/flecha.png"></li>
-              </a>                                  
-            </ul>
-          </div>
-      <div class='list-container'>
-        <details open>
-          <summary class='title-display'>MEJORES ADS POR MES - 2019</summary>
-        <ul class='list'>
-          <a href="http://ads.loganmedia.mobi/explorer/733beafb" class="link">
-            <li class='item'>Marzo</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>
-          <a href="http://ads.loganmedia.mobi/explorer/13aa42fe" class="link">
-            <li class='item'>Abril</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>         
-          <a href="http://ads.loganmedia.mobi/explorer/7782d318" class="link">
-            <li class='item'>Mayo</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>
-          <a href="http://ads.loganmedia.mobi/explorer/6e0d11ce" class="link">
-            <li class='item'>Junio</li>
-            <li class='arrow'><img src="images/flecha.png"></li>            
-          </a>
-          <a href="http://ads.loganmedia.mobi/explorer/1cdc15c7" class="link">
-            <li class='item'>Julio</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>
-          <a href="http://ads.loganmedia.mobi/explorer/ed42ed6f" class="link">
-            <li class='item'>Agosto</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>   
-          <a href="http://ads.loganmedia.mobi/explorer/02f0d7a0" class="link">
-            <li class='item'>Septiembre</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>
-          <a href="http://ads.loganmedia.mobi/explorer/059bde37" class="link">
-            <li class='item'>Octubre</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>
-          <a href="#" class="link">
-            <li class='item'>Noviembre</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>
-          <a href="#" class="link">
-            <li class='item'>Diciembre</li>
-            <li class='arrow'><img src="images/flecha.png"></li>
-          </a>                    
-        </ul>
-      </div>
-    </section>
+        <section class="categories">
+            <div class='list-container'>
+                <details open>
+                    <summary class='title-display'>MEJORES ADS POR MES - 2020</summary>
+                    <ul class='list'>
+                        <a href="http://ads.loganmedia.mobi/explorer/4fc2e491" class="link">
+                            <li class='item'>Enero</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/902b2484" class="link">
+                            <li class='item'>Febrero</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                    </ul>
+            </div>
+            <div class='list-container'>
+                <details open>
+                    <summary class='title-display'>MEJORES ADS POR MES - 2019</summary>
+                    <ul class='list'>
+                        <a href="http://ads.loganmedia.mobi/explorer/733beafb" class="link">
+                            <li class='item'>Marzo</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/13aa42fe" class="link">
+                            <li class='item'>Abril</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/7782d318" class="link">
+                            <li class='item'>Mayo</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/6e0d11ce" class="link">
+                            <li class='item'>Junio</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/1cdc15c7" class="link">
+                            <li class='item'>Julio</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/ed42ed6f" class="link">
+                            <li class='item'>Agosto</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/02f0d7a0" class="link">
+                            <li class='item'>Septiembre</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/059bde37" class="link">
+                            <li class='item'>Octubre</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/d4a44f7c" class="link">
+                            <li class='item'>Noviembre</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/7d0b0d86?products=RICH&formats=Interstitial&creatives=418f26bd,433252df,10f76e02,90435b7b,41b9b545,2d0aa235,111d50f3,ca4d7ccc,3cfb2531&sizes=320x460" class="link">
+                            <li class='item'>Diciembre</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/85e0f6ed" class="link">
+                            <li class='item'><b>VER TODO</b></li>
+                        </a>
+                    </ul>
+            </div>
+        </section>
 </body>
-<!--
-<footer>
-  <strong><p style="margin-bottom: 0px !important;"><script type="text/javascript">document.write(new Date().getFullYear());</script> | Logan Media </p></strong>
-</footer>
--->
+
 </html>

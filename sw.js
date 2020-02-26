@@ -7,7 +7,7 @@ if (workbox) {
 }
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
-  "/test/app/index.html",
+  "/creativeservices/index.html",
 ];
 self.addEventListener("install", function (event) {
   console.log("[PWA Builder] Install Event processing");

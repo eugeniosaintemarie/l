@@ -1,7 +1,1 @@
-﻿.view-first .mask { background: url('../images/1px-67aee6-50.png'); }
-.view-fifth:hover .mask { background: url('../images/1px-67aee6-50.png'); }
-.view-fifth h2 { background: url('../images/1px-000000-50.png'); }
-.view a.info { background: url('../images/1px-000000-50.png');}
-.second-effect a.info { background: url('../images/1px-000000-50.png');}
-#comments-form input[type=text],#comments-form input[type=email],#comments-form input[type=url] { width: 300px !important; }
-#contacts-form input[type=text],#contacts-form input[type=email],#contacts-form input[type=url] { width: 300px !important; }
+﻿.view-first .mask{background:url(../images/1px-67aee6-50.png)}.view-fifth:hover .mask{background:url(../images/1px-67aee6-50.png)}.view-fifth h2{background:url(../images/1px-000000-50.png)}.view a.info{background:url(../images/1px-000000-50.png)}.second-effect a.info{background:url(../images/1px-000000-50.png)}#comments-form input[type=email],#comments-form input[type=text],#comments-form input[type=url]{width:300px!important}#contacts-form input[type=email],#contacts-form input[type=text],#contacts-form input[type=url]{width:300px!important}

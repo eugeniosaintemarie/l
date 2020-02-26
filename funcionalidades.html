@@ -1,179 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Logan Media</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="https://loganmedia.mobi/favicon.ico"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</head>
-<body>
-  <div class='container'>
-    <header class='media'>
-        <div class='header-formatos'>
-          <a href="http://loganmedia.mobi/test/app"><img class="logoBLANCO" src="images/logoN.png"></a>
-        </div>
-        <nav role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>    
-            <ul id="menu">
-                <div class="menulist">
-                    <a style="color: white !important;" href="../app/formatos.html"
-                      ><li>FORMATOS</li></a
-                    >
-                    <a
-                      style="color: white !important;"
-                      href="../app/funcionalidades.html"
-                      ><li>FUNCIONALIDADES</li></a
-                    >
-                    <a style="color: white !important;" href="../app/industria.html"
-                      ><li>ADS POR INDUSTRIA</li></a
-                    >
-                    <a style="color: white !important;" href="../app/mes.html"
-                      ><li>ADS POR MES</li></a
-                    >
-                    <a
-                      class="specsmenu"
-                      style="color: white !important;"
-                      href="../app/specs.html"
-                      ><li>SPECS</li></a
-                    >
-                  </div>
-            </ul>
-          </div>
-        </nav>
-    </header>
-  </div>
-  <details open>
-      <summary class='title-rm' style="border-bottom: none; padding-left: 25px;">FUNCIONALIDADES</summary>
-    <section class="categories">
-      <div class='list-container'>
-              <ul class='list-func'>
-                      <a href="http://ads.loganmedia.mobi/explorer/1d944f13" class="link">
-                        <li class='item'>360 Degrees</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>              
-                      <a href="" class="link">
-                        <li class='item'>Add Contact</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>    
-                      <a href="http://ads.loganmedia.mobi/explorer/aa05b0f3" class="link">
-                        <li class='item'>Add to Calendar</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>                          
-                      <a href="http://ads.loganmedia.mobi/explorer/2eb9610d" class="link">
-                        <li class='item'>Erase</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>
-                      <a href="http://ads.loganmedia.mobi/explorer/2e94ca26" class="link">
-                        <li class='item'>Call Phone</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>            
-                      </a>              
-                      <a href="http://ads.loganmedia.mobi/explorer/56964b34" class="link">
-                        <li class='item'>Countdown</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>            
-                      </a>   
-                </ul>
-          </div>
 
-          <div class='list-container'>
-              <ul class='list-func'>
-                      <a href="" class="link">
-                        <li class='item'>Download app</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>            
-                      </a>
-                      <a href="http://ads.loganmedia.mobi/explorer/4f4b02a2" class="link">
-                        <li class='item'>Drag and Drop</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>            
-                      </a>
-                      <a href="http://ads.loganmedia.mobi/explorer/5545d329" class="link">
-                        <li class='item'>Form</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>    
-                      <a href="http://ads.loganmedia.mobi/explorer/55566415" class="link">
-                        <li class='item'>Gallery</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>                      
-                      <a href="http://ads.loganmedia.mobi/explorer/29f56d89" class="link">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Logan Media</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="shortcut icon" type="image/png" href="https://loganmedia.mobi/favicon.ico" />
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+
+<body>
+    <div class='container'>
+        <header class='media'>
+            <div class='header-formatos'>
+                <a href="http://loganmedia.mobi/creativeservices"><img class="logoBLANCO" src="images/logoN.png"></a>
+            </div>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <div class="menulist">
+                            <a style="color: white !important;" href="../creativeservices/index.html">
+                                <li>INICIO</li>
+                            </a>
+                            <a style="color: white !important;" href="../creativeservices/formatos.html">
+                                <li>FORMATOS</li>
+                            </a>
+                            <a class="itemmenufuncionalidades" style="color: white !important;" href="../creativeservices/funcionalidades.html">
+                                <li>FUNCIONALIDADES</li>
+                            </a>
+                            <a class="itemmenuindustria" style="color: white !important;" href="../creativeservices/industria.html">
+                                <li>ADS POR INDUSTRIA</li>
+                            </a>
+                            <a class="itemmenumes" style="color: white !important;" href="../creativeservices/mes.html">
+                                <li>ADS POR MES</li>
+                            </a>
+                            <a style="color: white !important;" href="../creativeservices/specs.html">
+                                <li>SPECS</li>
+                            </a>
+                            <a style="color: white !important;" href="../creativeservices/oficinas.html">
+                                <li>OFICINAS</li>
+                            </a>
+                            <hr align="left" style="width: 60%; border-top: 1px dotted white;">
+                            <div class="row">
+                                <div class="column">
+                                    <li class="redesmenu" style="margin-left: 15px; margin-right: 15px; font-size: 25px;">
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.facebook.com/loganmediahq/" target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.instagram.com/loganmediahq/" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.linkedin.com/company/logan-media" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://twitter.com/loganmediahq?lang=en" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a style="padding-right: 10px; color: white !important; text-decoration: none;" href="https://www.youtube.com/user/loganmediahq/videos?view_as=subscriber" target="_blank">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+        </div>
+        <details open>
+            <summary class='title-rm' style="border-bottom: none; padding-left: 25px;">FUNCIONALIDADES</summary>
+            <section class="categories">
+                <div class='list-container'>
+                    <ul class='list-func'>
+                        <a href="http://ads.loganmedia.mobi/explorer/1d944f13" class="link">
+                            <li class='item'>360 Degrees</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="" class="link">
+                            <li class='item'>Add Contact</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/aa05b0f3" class="link">
+                            <li class='item'>Add to Calendar</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/2eb9610d" class="link">
+                            <li class='item'>Erase</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/2e94ca26" class="link">
+                            <li class='item'>Call Phone</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/56964b34" class="link">
+                            <li class='item'>Countdown</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/f56d2f21" class="link">
+                            <li class='item'>Download creativeservices</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class='list-container'>
+                    <ul class='list-func'>
+                        <a href="http://ads.loganmedia.mobi/explorer/4f4b02a2" class="link">
+                            <li class='item'>Drag and Drop</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="-" class="link">
+                            <li class='item'>Flip</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/5545d329" class="link">
+                            <li class='item'>Form</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/55566415" class="link">
+                            <li class='item'>Gallery</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/0afb2d41" class="link">
+                            <li class='item'>Hipercube</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <!--<a href="http://ads.loganmedia.mobi/explorer/29f56d89" class="link">
                         <li class='item'>Gyro</li>
                         <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>       
-                      <a href="http://ads.loganmedia.mobi/explorer/c847f550" class="link">
-                        <li class='item'>Location / Map</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>                                   
-                </ul>
-          </div>
-
-          <div class='list-container'>
-              <ul class='list-func'>
-                      <a href="http://ads.loganmedia.mobi/preview/5748de7a" class="link">
-                        <li class='item'>Paint / Draw</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>    
-                      <a href="http://ads.loganmedia.mobi/explorer/c8968313" class="link">
-                        <li class='item'>Puzzle</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>
-                      <a href="http://ads.loganmedia.mobi/explorer/caf2d893" class="link">
-                        <li class='item'>Quiz</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>            
-                      <a href="" class="link">
-                          <li class='item'>Scroll</li>
-                          <li class='arrow'><img src="images/flecha.png"></li>
-                        </a>  
-                      <a href="http://ads.loganmedia.mobi/explorer/f97df1fb" class="link">
+                      </a>-->
+                        <a href="http://ads.loganmedia.mobi/explorer/d26d2ef6" class="link">
+                            <li class='item'>Image diff</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/c847f550" class="link">
+                            <li class='item'>Location / Map</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class='list-container'>
+                    <ul class='list-func'>
+                        <a href="http://ads.loganmedia.mobi/preview/5748de7a" class="link">
+                            <li class='item'>Paint / Draw</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/e8c477d9" class="link">
+                            <li class='item'>Pannable</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/c8968313" class="link">
+                            <li class='item'>Puzzle</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/caf2d893" class="link">
+                            <li class='item'>Quiz</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="" class="link">
+                            <li class='item'>Scroll</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <!--<a href="http://ads.loganmedia.mobi/explorer/f97df1fb" class="link">
                           <li class='item'>Shake</li>
                           <li class='arrow'><img src="images/flecha.png"></li>
-                        </a>         
-                      <a href="http://ads.loganmedia.mobi/explorer/91cd8af4" class="link">
-                        <li class='item'>Share content</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>                  
-                </ul>
-          </div>
-
-          <div class='list-container'>
-              <ul class='list-func'>
-                      <a href="http://ads.loganmedia.mobi/explorer/10cc3f70" class="link">
-                        <li class='item'>Swipe</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>    
-                      <a href="http://ads.loganmedia.mobi/explorer/64096996" class="link">
-                        <li class='item'>Tap</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>   
-                      <a href="http://ads.loganmedia.mobi/explorer/86820ccc" class="link">
-                        <li class='item'>Vibrate</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>                
-                      <a href="" class="link">
-                        <li class='item'>Visual Effects</li>
-                        <li class='arrow'><img src="images/flecha.png"></li>
-                      </a>  
-                </ul>
-          </div>
-
-    </section>
+                      </a>-->
+                        <a href="http://ads.loganmedia.mobi/explorer/91cd8af4" class="link">
+                            <li class='item'>Share content</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/be0b06d8" class="link">
+                            <li class='item'>Show Twitter feed</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class='list-container'>
+                    <ul class='list-func'>
+                        <a href="http://ads.loganmedia.mobi/explorer/10cc3f70" class="link">
+                            <li class='item'>Swipe</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/64096996" class="link">
+                            <li class='item'>Tap</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="http://ads.loganmedia.mobi/explorer/86820ccc" class="link">
+                            <li class='item'>Vibrate</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                        <a href="" class="link">
+                            <li class='item'>Visual Effects</li>
+                            <li class='arrow'><img src="images/flecha.png"></li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
 </body>
-<!--
-<footer>
-  <strong><p style="margin-bottom: 0px !important;"><script type="text/javascript">document.write(new Date().getFullYear());</script> | Logan Media </p></strong>
-</footer>
--->
+
 </html>
