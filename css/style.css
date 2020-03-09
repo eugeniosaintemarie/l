@@ -209,7 +209,7 @@ html {
   position: fixed;
   width: 500px;
   margin: -100px 0 0 0;
-  height: 1000px;
+  height: 1200px;
   padding: 50px;
   padding-top: 120px;
   right: -100px;
@@ -220,6 +220,13 @@ html {
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
+
+@media (max-width: 320px) {
+  #menu {
+    padding: 125px;
+  }
+}
+
 #menulist {
   border-bottom: 1px dotted rgb(255, 255, 255);
 }

@@ -1,1 +1,1 @@
-$(document).ready(function(){$("a.cagFx").each(function(n){var a=$(this).html();$(this).prepend("<span>"+a+"</span>").creativeservicesend("<span>"+a+"</span>")})});
+$(document).ready(function(){$("a.cagFx").each(function(n){var a=$(this).html();$(this).prepend("<span>"+a+"</span>").append("<span>"+a+"</span>")})});
